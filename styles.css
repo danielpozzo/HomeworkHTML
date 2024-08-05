@@ -1,0 +1,140 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333333;
+    margin: 20px;
+}
+
+footer {
+    background: #333333;
+    color: #f4f4f4;
+    padding: 1em 0;
+    text-align: center;    
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#cabecera-container {
+    margin: 0 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: #333333;
+    color: #f4f4f4;
+    padding: 1em 1em 1em 1em;
+    height: 10vh;
+}
+
+.menu {
+    margin-left: 1.5em;
+}
+
+#portada-container {
+    background: white;
+    color: #333333;
+    margin: 0 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.espaciado {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 100%; /* Agranda la imagen al 100 % del contenedor */
+    max-width: 800px; /* Define el tamaño máximo de la imagen */
+    height: auto; /* Ajusta la altura de la imagen */
+    object-fit: contain; /* Mantiene la proporcionalidad de la imagen */
+}
+
+a {
+    color: #333333;
+}
+
+a:hover {
+    color: #007bff;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 2em 0;
+}
+
+header a {
+    color: #f4f4f4;
+}
+
+footer a {
+    color: #f4f4f4;
+    margin: 0 0.5em;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos específicos del bloque */
+main {
+    padding: 1em;
+}
+
+#cards-container {
+    width: 85%;
+    margin: auto;    
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.cards {
+    width: fit-content;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 1em 1em 1em 1em; /* Arriba - Derecha - Abajo - Izquierda*/
+    border: 2px solid grey;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 1s;
+    gap: 1em;
+}
+
+.cards-image {
+    width: 200px;
+    height: 200px;
+}
+
+.cards:hover {
+    background-color: orange;
+}
+
+/* Responsividad en dispositivos móviles */
+@media (max-width: 768px) {
+    body {
+        padding: 0 1em;
+    }
+
+    header, footer {
+        text-align: center;
+    }
+
+    header img {
+        max-width: 100px;
+    }
+}

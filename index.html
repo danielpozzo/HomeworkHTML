@@ -3,86 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitio Web Personal de Daniel Pozzo - Desarrollador Web">
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Mi Primer Sitio Web</title>
 </head>
 
 <body>
     <!-- El contenido de mi página HOME o INICIO va aquí -->
     <header>
-        <h1>Bienvenidos a mi Sitio Web</h1>
-        <img src="./Imagenes/DanielPozzo2023.png"/>
+        <div id="cabecera-container">
+            <img src="./Imagenes/DanielPozzo2023.png" class="logo" alt="Imagen de Daniel Pozzo"/>
+            <div>
+                <a href="#sobre-mi" class="menu">Sobre mí</a>
+                <a href="#tecnologias" class="menu">Tecnologías</a>
+                <a href="#formacion" class="menu">Formación académica</a>
+            </div>
+        </div>
+
+        <div id="portada-container">
+            <h1>Bienvenidos a mi Sitio Web</h1>
+            <img src="./Imagenes/DesarrolladorWeb.jpg" class="espaciado" alt="Imagen de Portada de Desarrollador Web"/>
+            <h2>Carlos Daniel Pozzo - Desarrollador Web</h2>
+        </div>
     </header>
 
     <main>
-        <div>
-            <a href="">Sobre mí</a>
-            <a href="">Tecnologías</a>
-            <a href="">Formación académica</a>
-        </div>
-        <h2>Carlos Daniel Pozzo - Desarrollador Web</h2>
-
-        <hr />
-
-        <section>
+        <section id="sobre-mi">
             <h3>Sobre mí</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe ipsa ducimus magnam aut laudantium eaque earum tempora facilis, corrupti quod ut necessitatibus non iusto officiis voluptates voluptatum dolorem suscipit. Tempora sint eius, ipsum ex aspernatur modi consectetur explicabo! Laborum optio autem amet ratione reiciendis, adipisci dolore facilis recusandae eaque, magni libero minima? Autem ipsa quidem eum animi hic vitae natus consectetur accusamus tenetur optio mollitia, sed iure dolore a in blanditiis commodi atque quos odio maxime. Rem illo ipsum numquam, a qui eius reprehenderit dicta veritatis ut quam iste obcaecati excepturi dolores quos in, praesentium ex ullam ad, eligendi consectetur.</p>
         </section>
 
-        <section>
+        <hr />
 
-            <hr />
-
+        <section id="tecnologias">
             <h3>Tecnologías</h3>
             <article>
                 <h4>Desarrollo Web</h4>
-                <div>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JS</li>
-                        <li>WordPress</li>
-                    </ul>
+                <div id="cards-container">
+                    <div class="cards">
+                        <h5>HTML</h5>
+                        <img src="./Imagenes/LogoHTML.png" class="cards-image" alt="Logo HTML" />
+                    </div>
+                    <div class="cards">
+                        <h5>CSS</h5>
+                        <img src="./Imagenes/LogoCSS.png" class="cards-image" alt="Logo CSS" />
+                    </div>
+                    <div class="cards">
+                        <h5>JavaScrip</h5>
+                        <img src="./Imagenes/LogoJSCuadrado.png" class="cards-image" alt="Logo JavaScript" />
+                    </div>
+                    <div class="cards">
+                        <h5>WordPress</h5>
+                        <img src="./Imagenes/LogoWordPress.png" class="cards-image" alt="Logo WordPress" />
+                    </div>
                 </div>
             </article>
+
             <article>
-                <h4>Marketing Digital</h4>
-                <div>
-                    <ul>
-                        <li>Asesoramiento</li>
-                        <li>Posicionamiento Web (SEO/SEM)</li>
-                        <li>Social Media Management</li>
-                        <li>Publicidad Digital (Paid Media)</li>
-                    </ul>
+                <h4>Marketing Digital</h4>                
+                <div id="cards-container">                    
+                    <div class="cards">
+                        <h5>Asesoramiento</h5>
+                        <img src="./Imagenes/LogoAsesoramiento.png" class="cards-image" alt="Logo Asesoramiento" />
+                    </div>
+                    <div class="cards">
+                        <h5>Posicionamiento Web</h5>
+                        <img src="./Imagenes/LogoSEO.png" class="cards-image" alt="Logo Asesoramiento" />
+                    </div>
+                    <div class="cards">
+                        <h5>Social Media</h5>
+                        <img src="./Imagenes/LogoSocialMedia.png" class="cards-image" alt="Logo Asesoramiento" />
+                    </div>
+                    <div class="cards">
+                        <h5>Paid Media</h5>
+                        <img src="./Imagenes/LogoPaidMedia.png" class="cards-image" alt="Logo Asesoramiento" />
+                    </div>
                 </div>
             </article>
         </section>
 
         <hr />
 
-        <section>
+        <section id="formacion">
             <h3>Formación académica</h3>
             <article>
-                <h4>Neetwork Business School</h4>
-                <div>
-                    <ol>
-                        <li>Master en Marketing Digital</li>
-                        <li>Experto en Social Media</li>
-                    </ol>
+                <h4>Neetwork Business School</h4>                
+                <div id="cards-container">
+                    <div class="cards">
+                        <img src="./Imagenes/LogoNeetwork.png" class="cards-image" alt="Logo de Neetwork Business School" />
+                        <p>Master en Marketing Digital</p>
+                        <p>Experto en Social Media</p>
+                    </div>
+                    <div class="cards">
+                        <img src="./Imagenes/LogoISPC.png" class="cards-image" alt="Logo de Neetwork Business School" />
+                        <p>TSDWAD</p>
+                        <p>Desarrollo Web y Aplicaciones Digitales</p>
+                    </div>
                 </div>
-            </article>
-            <article>
-                <h4>ISPC</h4>
-                <div>
-                    <ol>
-                        <li>Programador</li>
-                        <li>Desarrollador Full Stack Junior</li>
-                    </ol>
-                </div>
-            </article>
+            </article>            
         </section>
     </main>
-
-    <hr />
 
     <footer>
         <p>Todos los derechos reservados - Copyright 2024</p>
